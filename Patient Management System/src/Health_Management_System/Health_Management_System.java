@@ -65,21 +65,26 @@ Administrator.addPatient(pat);
 Administrator.addPatient(Zaid);
 
 
-//---------------------------------Video File--------------------------------------------
+//---------------------------------Video meeetig--------------------------------------------
 VideoCall now = new VideoCall();
 now.displayMeetingLink();
 
-//---------------------------------Vital--------------------------------------------
-//Zaid.uploadVitals();
-//System.out.println(Zaid);
-//Zaid.displayVitals();
-//
-//
-//EmergencyAlert alert = new EmergencyAlert();
-//alert.checkVitalsAndSendAlert(Zaid.getVitals());
+//---------------------------------VitalAlert mail sending code--------------------------------------------
+Zaid.uploadVitals();
+System.out.println(Zaid);
+Zaid.displayVitals();
 
 
-        // PanicButton.Press(Zaid);
+EmergencyAlert alert = new EmergencyAlert();
+alert.checkVitalsAndSendAlert(Zaid.getVitals());
+
+//---------------------------------Panick button code---------------------------
+PanicButton.Press(Zaid);
+
+//---------------------------------Remainder sending code---------------------------
+ChatServer server=new ChatServer("+923312707515");
+ChatClient client = new ChatClient(server);
+client.StartChat();
 //EmailNotification e = new EmailNotification();
 //e.sendMail("new configuration opf project thropugh java","mabbasi.bsds24seecs@seecs.edu.pk","TESTing");
 
