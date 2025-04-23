@@ -9,7 +9,7 @@ import java.util.Properties;
 public class EmailNotification implements Notifiable{
     public void sendMail(String messageText, String receiver, String subject) {
         final String username = "notzaidabbas1@gmail.com";      // sender email
-        final String password = "qfat vvvv tqcs cgmu";         // App password here
+        final String password = "0000 1111 2222 3333";         // App password here like" 0000 1111 2222 3333 ";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
