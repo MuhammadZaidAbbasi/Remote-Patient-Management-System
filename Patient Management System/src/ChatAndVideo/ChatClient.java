@@ -1,6 +1,6 @@
 package ChatAndVideo;
 
-class ChatClient {
+public class ChatClient {
 
     private final ChatServer chatServer;
 
