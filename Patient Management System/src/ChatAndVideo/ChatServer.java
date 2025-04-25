@@ -1,6 +1,6 @@
 package ChatAndVideo;
 
-class ChatServer {
+public class ChatServer {
 
     // The WhatsApp number with country code, without "+" (ex: 19706603801)
     private final String whatsappNumber;
